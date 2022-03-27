@@ -21,11 +21,13 @@ app.use(express.static("uploads/"));
 app.get("/", (req, res, next) => {
   let x = "";
   let dirs = listDirs(path.join(__dirname, UPLOAD_PATH));
+  let j =
+    dirs.length == 0 ? "No files uplaoded." : "All files uploaded till now.";
   for (let dir of dirs) {
-    console.log(dir)
+    console.log(dir);
     x += linkMaker(dir, `/${dir}`);
   }
-  res.send(pageMaker("<h2>All files uploaded till now.</h2>" + "<ul>" + x + "</ul>"));
+  res.send(pageMaker(`<h2>${j}</h2>` + "<ul>" + x + "</ul>"));
 });
 
 app.post("/upload", upload.single("file"), (req: any, res, next) => {

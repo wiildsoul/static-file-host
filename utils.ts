@@ -12,7 +12,7 @@ export function gltfFilter(req, file, cb) {
 }
 
 export const listDirs = (dirname)=> {
-  return readdirSync(dirname)
+  return readdirSync("./uploads")
 }
 
 export const storage = diskStorage({
