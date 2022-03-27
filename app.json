@@ -1,7 +1,7 @@
 {
-    "name": "Node.js Sample",
+    "name": "Node.js Static file host",
     "description": "Node.js app Express for gltf hosting",
-    "repository": "https://github.com/heroku/",
+    "repository": "https://github.com/wiildsoul/static-file-host",
     "logo": "https://node-js-sample.herokuapp.com/node.png",
     "keywords": ["node", "express", "static-files", "gltf" ]
   }
