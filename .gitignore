@@ -1,0 +1,7 @@
+dist/
+node_modules/
+uploads/
+package.lock.json
+npm-debug.log
+.DS_Store
+/*.env

@@ -1,0 +1,7 @@
+{
+    "name": "Node.js Sample",
+    "description": "Node.js app Express for gltf hosting",
+    "repository": "https://github.com/heroku/",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "express", "static-files", "gltf" ]
+  }
